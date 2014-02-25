@@ -3,7 +3,10 @@
 <div class="container text-muted">
 
 	<div class="col-xs-3">
-<img src="assetx/img/ban.png">
+ <strong class="text-warning"><span class="fa fa-external-link-square">&nbsp;</span>&nbsp;Link Pondok Cabang</strong><br>
+  <?php foreach ($links_pt as $pt): ?>
+  <span class="fa fa-circle-o"></span>&nbsp;<a href="<?php echo $pt->link ?>" title="<?php echo $pt->nama_lengkap ?>" target="_blank"><?php echo $pt->text_link ?></a><br>
+  <?php endforeach; ?>
 
     </div>
     <div class="col-xs-3 fok">
@@ -34,9 +37,9 @@
 
     </div>
 </div>
-
-</div>
 <div class="text-center text-muted">Best Resolution in 1026x768px</div>
+</div>
+
 <![endif]>
 
 <!--[if IE ]>
